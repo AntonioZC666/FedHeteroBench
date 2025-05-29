@@ -1,0 +1,56 @@
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 虚拟环境
+venv/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VSCode 设置
+.vscode/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志 & 运行输出
+*.log
+*.out
+
+# 数据集缓存 & 中间文件（按需添加）
+*.npz
+*.npy
+*.pkl
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# TensorBoard
+runs/
+events.out.tfevents.*
+
+# Checkpoints & Results & Wandb
+checkpoints/
+results/
+output/
+logs/
+wandb/
+
+# Docker 编译缓存（如使用）
+*.dockerignore
+docker-compose.override.yml
+
+# pipenv
+Pipfile.lock
+
+# pyright 或 pylance 类型检查缓存
+typings/
