@@ -1,41 +1,43 @@
 # 🔬 FedHeteroBench
 
-本项目汇总并实现了联邦学习中用于应对 **数据异质性（Data Heterogeneity / Non-IID）问题** 的代表性框架和方法。通过统一的接口和可复现实验框架，方便研究人员和开发者对不同算法在异构数据场景下的性能进行比较和分析。目标是构建一个：
+📘 This README is available in [English](README.md) | [中文](README.zh-CN.md)
 
-- ✅ **统一、可复现的实验平台**
-- ✅ 支持多种数据异构类型（特征异构、标签分布异构等）
-- ✅ 方便添加新方法与新数据集
-- ✅ 便于对比不同方法在不同任务下的效果
+This project provides a collection and unified implementation of representative **federated learning algorithms and frameworks** designed to address **data heterogeneity (Non-IID)** challenges. By offering a consistent interface and reproducible experimental pipeline, it aims to help researchers and developers compare and evaluate the performance of different methods under heterogeneous data scenarios. The goal is to build a:
 
----
-
-## ✅ 当前已实现方法
-
-| 方法名称      | 简要描述                                                |
-| ------------- | ------------------------------------------------------- |
-| **FedAvg**    | 最基础的联邦平均算法，适用于 IID 数据，是其他算法的基准 |
-| **FedBR**     | 引入对抗扰动增强鲁棒性，适用于异构数据环境              |
-| **FedDecorr** | 通过特征去相关性缓解客户端之间的统计分布偏移            |
-| **FedImpro**  | 改进的个性化方法，提升模型的本地适应能力                |
-| **FedNP**     | 利用神经过程建模提升泛化能力的联邦学习方法              |
-| **FedProx**   | 在本地目标函数添加正则项，减少客户端更新漂移            |
-| **MOON**      | 基于对比学习思想，增强客户端模型间一致性                |
-| **SCAFFOLD**  | 引入控制变量，有效缓解客户端漂移，加快收敛速度          |
+- ✅ **Unified and reproducible experimentation platform**
+- ✅ Support for multiple types of heterogeneity (feature heterogeneity, label distribution skew, etc.)
+- ✅ Easy integration of new methods and datasets
+- ✅ Convenient comparison across various tasks and benchmarks
 
 ---
 
-## 📁 项目结构
+## ✅ Implemented Methods
+
+| Method        | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| **FedAvg**    | The basic federated averaging algorithm, suitable for IID data; serves as a baseline |
+| **FedBR**     | Enhances robustness by introducing adversarial perturbations for heterogeneous data |
+| **FedDecorr** | Mitigates statistical distribution shifts via feature decorrelation |
+| **FedImpro**  | A personalized enhancement method that improves local adaptation |
+| **FedNP**     | Uses neural processes to improve generalization in federated learning |
+| **FedProx**   | Adds a proximal term to local objectives to reduce client update divergence |
+| **MOON**      | Uses contrastive learning to improve model consistency across clients |
+| **SCAFFOLD**  | Introduces control variates to correct client drift and accelerate convergence |
+
+---
+
+## 📁 Project Structure
 
 .
- ├── fedavg/         # FedAvg 实现
- ├── fedbr/          # FedBR 实现
- ├── feddecorr/      # FedDecorr 实现
- ├── fedimpro/       # FedImpro 实现
- ├── fednp/          # FedNP 实现
- ├── fedprox/        # FedProx 实现
- ├── moon/           # MOON 实现
- ├── scaffold/       # SCAFFOLD 实现
- ├── data/           # 数据处理与分发
- ├── utils/          # 公共工具函数（如数据划分、评估指标）
- ├── README.md       # 项目说明文档
- └── .gitignore      # Git 忽略规则
+ ├── fedavg/      # FedAvg implementation
+ ├── fedbr/       # FedBR implementation
+ ├── feddecorr/   # FedDecorr implementation
+ ├── fedimpro/    # FedImpro implementation
+ ├── fednp/       # FedNP implementation
+ ├── fedprox/     # FedProx implementation
+ ├── moon/        # MOON implementation
+ ├── scaffold/    # SCAFFOLD implementation
+ ├── data/        # Data processing and partitioning
+ ├── utils/       # Utility functions (e.g., data splitting, evaluation metrics)
+ ├── README.md    # Project documentation
+ └── .gitignore   # Git ignore rules
