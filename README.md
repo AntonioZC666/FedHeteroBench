@@ -28,7 +28,7 @@ This project provides a collection and unified implementation of representative 
 
 ## 📁 Project Structure
 
-.
+```
  ├── fedavg/      # FedAvg implementation
  ├── fedbr/       # FedBR implementation
  ├── feddecorr/   # FedDecorr implementation
@@ -41,3 +41,5 @@ This project provides a collection and unified implementation of representative 
  ├── utils/       # Utility functions (e.g., data splitting, evaluation metrics)
  ├── README.md    # Project documentation
  └── .gitignore   # Git ignore rules
+```
+
