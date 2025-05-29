@@ -26,16 +26,52 @@
 
 ## 📁 项目结构
 
-.
- ├── fedavg/         # FedAvg 实现
- ├── fedbr/          # FedBR 实现
- ├── feddecorr/      # FedDecorr 实现
- ├── fedimpro/       # FedImpro 实现
- ├── fednp/          # FedNP 实现
- ├── fedprox/        # FedProx 实现
- ├── moon/           # MOON 实现
- ├── scaffold/       # SCAFFOLD 实现
- ├── data/           # 数据处理与分发
- ├── utils/          # 公共工具函数（如数据划分、评估指标）
- ├── README.md       # 项目说明文档
- └── .gitignore      # Git 忽略规则
+ ├── fedavg/      # FedAvg implementation
+ ├── fedbr/       # FedBR implementation
+ ├── feddecorr/   # FedDecorr implementation
+ ├── fedimpro/    # FedImpro implementation
+ ├── fednp/       # FedNP implementation
+ ├── fedprox/     # FedProx implementation
+ ├── moon/        # MOON implementation
+ ├── scaffold/    # SCAFFOLD implementation
+ ├── data/        # Data processing and partitioning
+ ├── utils/       # Utility functions (e.g., data splitting, evaluation metrics)
+ ├── README.md    # Project documentation
+ └── .gitignore   # Git ignore rules
+
+
+
+## 🚀 快速开始
+
+### 1️⃣ 克隆本项目
+
+```bash
+git clone https://github.com/AntonioZC666/FedHeteroBench.git
+cd FedHeteroBench
+```
+
+### 2️⃣ 创建虚拟环境并安装依赖
+
+```shell
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 3️⃣ 运行示例（以 FedAvg 为例）
+
+```
+python fedavg/main.py --dataset cifar10 --num_users 100 --local_ep 5 --model resnet18
+```
+
+更多参数说明详见各算法子目录中的文档或源码注释。
+
+## 📌 后续计划
+
+我们将持续扩展支持的算法与功能，包括但不限于：
+
+- FedNova、FedDyn、Ditto、FedBABU、FedRep 等算法
+- 更多数据集支持（如 FEMNIST、Shakespeare、CINIC-10）
+- 更加模块化的训练框架
+
+欢迎提交 PR 或 Issue 与我们共同完善本项目。

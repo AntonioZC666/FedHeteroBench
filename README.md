@@ -43,3 +43,41 @@ This project provides a collection and unified implementation of representative 
  └── .gitignore   # Git ignore rules
 ```
 
+
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/AntonioZC666/FedHeteroBench.git
+cd FedHeteroBench
+```
+
+### 2️⃣ Create a virtual environment and install dependencies
+
+```shell
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run an example (FedAvg as an example)
+
+```
+python fedavg/main.py --dataset cifar10 --num_users 100 --local_ep 5 --model resnet18
+```
+
+更多参数说明详见各算法子目录中的文档或源码注释。
+
+## 📌 Future Plans
+
+We will continue to expand supported algorithms and features, including but not limited to:
+
+- Algorithms such as FedNova, FedDyn, Ditto, FedBABU, FedRep, etc.
+- More dataset support (e.g., FEMNIST, Shakespeare, CINIC-10)
+- A more modular training framework
+
+Contributions via PRs or Issues are welcome to help improve this project.
