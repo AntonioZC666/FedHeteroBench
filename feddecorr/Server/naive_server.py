@@ -1,0 +1,1 @@
+from Server.server import Serverclass naive_server(Server):    pass

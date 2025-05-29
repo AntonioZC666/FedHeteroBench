@@ -1,0 +1,24 @@
+# seed
+random_seed: 0  # 0
+save_model: true   # true # false
+use_wandb: true # true  # false
+
+
+# fed
+round: 2000    # 0.1用2000轮，iid、0.5和1.0用1000轮
+num_users: 100 # 1
+fraction: 0.1 # 1.0
+local_ep: 5   # 1
+lr: 0.01  # 0.01
+lr_decay_epoch: 1
+lr_decay_gamma: 0.998
+bs: 50  # 128
+local_bs: 50   # 128
+momentum: 0.9
+weight_decay: 0.0005
+
+# non-iid
+rule: "drichlet"  # "drichlet"   # "iid"
+drichlet_beta: 1
+
+mu: 0.01   # loss factor, default 0.01
