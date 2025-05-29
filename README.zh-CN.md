@@ -1,5 +1,7 @@
 # 🔬 FedHeteroBench
 
+📘 本 README 文件 有 [English](README.md) | [中文](README.zh-CN.md)
+
 本项目汇总并实现了联邦学习中用于应对 **数据异质性（Data Heterogeneity / Non-IID）问题** 的代表性框架和方法。通过统一的接口和可复现实验框架，方便研究人员和开发者对不同算法在异构数据场景下的性能进行比较和分析。目标是构建一个：
 
 - ✅ **统一、可复现的实验平台**
@@ -26,6 +28,7 @@
 
 ## 📁 项目结构
 
+```
  ├── fedavg/      # FedAvg implementation
  ├── fedbr/       # FedBR implementation
  ├── feddecorr/   # FedDecorr implementation
@@ -38,6 +41,9 @@
  ├── utils/       # Utility functions (e.g., data splitting, evaluation metrics)
  ├── README.md    # Project documentation
  └── .gitignore   # Git ignore rules
+```
+
+
 
 
 
