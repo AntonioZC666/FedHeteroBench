@@ -70,7 +70,7 @@ pip install -r requirements.txt
 python fedavg/main.py --dataset cifar10 --num_users 100 --local_ep 5 --model resnet18
 ```
 
-更多参数说明详见各算法子目录中的文档或源码注释。
+For more details on parameters, please refer to the documentation or source code comments in each algorithm's folder.
 
 ## 📌 Future Plans
 
